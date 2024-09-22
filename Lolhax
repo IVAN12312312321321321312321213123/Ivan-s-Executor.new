@@ -4857,7 +4857,7 @@ CreditsGroup:AddLabel("Ivan - script dev")
 CreditsGroup:AddLabel("Luca - script dev")
 CreditsGroup:AddDivider()
 CreditsGroup:AddLabel("Script Contributors:")
-CreditsGroup:AddLabel("mstudio45 - fake revive & firepp")
+CreditsGroup:AddLabel("Ivan - fake revive & firepp")
 
 Library.ToggleKeybind = Options.MenuKeybind
 
@@ -4875,4 +4875,6 @@ ThemeManager:ApplyToTab(Tabs["UI Settings"])
 
 SaveManager:LoadAutoloadConfig()
 
-Script.Functions.Alert("Thank U For Using Ivan's Lolhax There might Be Bugs Because Ur Executor Is Trash.", 8)
+Script.Functions.Alert("Thank U For Using Ivan's Lolhax There Might Be Bugs Because You're Executor Is Trash.", 5)
+Script.Functions.Wait(1000)
+Script.Functions.Alert("Ivans Executor Better",9)
