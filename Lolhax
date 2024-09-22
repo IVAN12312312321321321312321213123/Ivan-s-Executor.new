@@ -4845,16 +4845,16 @@ MenuGroup:AddDivider()
 MenuGroup:AddLabel("Menu bind"):AddKeyPicker("MenuKeybind", { Default = "RightShift", NoUI = true, Text = "Menu keybind" })
 MenuGroup:AddButton("Join Discord Server", function()
     local Inviter = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Discord%20Inviter/Source.lua"))()
-	Inviter.Join("https://discord.com/invite/cfyMptntHr")
+	Inviter.Join("print("ERROR")")
 	Inviter.Prompt({
-		name = "mspaint",
-		invite = "https://discord.com/invite/cfyMptntHr",
+		name = "Ivan's Lolhax",
+		invite = "ERROR",
 	})
 end)
 MenuGroup:AddButton("Unload", function() Library:Unload() end)
 
-CreditsGroup:AddLabel("deividcomsono - script dev")
-CreditsGroup:AddLabel("upio - script dev")
+CreditsGroup:AddLabel("Ivan - script dev")
+CreditsGroup:AddLabel("Luca - script dev")
 CreditsGroup:AddDivider()
 CreditsGroup:AddLabel("Script Contributors:")
 CreditsGroup:AddLabel("mstudio45 - fake revive & firepp")
@@ -4875,4 +4875,4 @@ ThemeManager:ApplyToTab(Tabs["UI Settings"])
 
 SaveManager:LoadAutoloadConfig()
 
-Script.Functions.Alert("You are playing on mspaint's compatibility branch. This means that some features may have been removed due to missing executor functionality. Thank you for your understanding.", 8)
+Script.Functions.Alert("Thank U For Using Ivan's Lolhax There might Be Bugs Because Ur Executor Is Trash.", 8)
