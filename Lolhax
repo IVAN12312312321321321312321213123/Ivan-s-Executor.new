@@ -4845,10 +4845,10 @@ MenuGroup:AddDivider()
 MenuGroup:AddLabel("Menu bind"):AddKeyPicker("MenuKeybind", { Default = "RightShift", NoUI = true, Text = "Menu keybind" })
 MenuGroup:AddButton("Join Discord Server", function()
     local Inviter = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Discord%20Inviter/Source.lua"))()
-	Inviter.Join("print("ERROR")")
+	Inviter.Join("discord.gg/porn")
 	Inviter.Prompt({
 		name = "Ivan's Lolhax",
-		invite = "ERROR",
+		invite = "discord.gg/porn",
 	})
 end)
 MenuGroup:AddButton("Unload", function() Library:Unload() end)
