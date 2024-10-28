@@ -648,7 +648,7 @@ function DrawingLib.createFrame()
 end
 
 task.spawn(function()
-	print("Ivan's Executor discord server: https://discord.gg/s8TRbwtHsc")
+	print("Ivan's Executor Has Been Injected!")
 end)
 
 function DrawingLib.createScreenGui()
